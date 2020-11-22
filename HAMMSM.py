@@ -81,7 +81,12 @@ if 5 != 10:
 	messtype=input("MESSAGE TYPE (0/1/55/110) :  ") 	
 	while True: 		
 		try: 			
-			subclient.send_message(message=message,messageType=messtype,chatId=chatId)
-			print(green+"Message sent:)")
+			spam=subclient.send_message(message=message,messageType=messtype,chatId=chatId)
+			for i in range(100):
+				spam()
+				spam()
+				spam()
+				spam()
+				spam()
 		except: 			
-			print(green+"Message sent:)")
+			pass
